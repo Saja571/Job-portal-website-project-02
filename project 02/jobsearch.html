@@ -1,0 +1,256 @@
+<!-- Job Search - Job Portal -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Search - Job Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Include Font Awesome CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: violet; /* Set your preferred background color here */
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .search-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .job {
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    .apply-page {
+      display: none;
+      opacity: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+    }
+
+    .apply-page.show {
+      display: block;
+      max-height: 1000px; /* Adjust the max height based on your content */
+      opacity: 1;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" id="logo">Job Portal</a>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Job Search</a>
+      <a href="#">Contact</a>
+      <a href="#">Resume Search</a>
+      <a href="signup.html" id="signup-btn">Login</a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="search-container">
+      <h2>Job Search</h2>
+      <form>
+        <label for="categories">Job Categories:</label>
+        <input type="text" id="categories" name="categories" placeholder="e.g., Software Development, Marketing">
+
+        <label for="locations">Job Locations:</label>
+        <input type="text" id="locations" name="locations" placeholder="e.g., New York, London">
+
+        <label for="keywords">Keywords:</label>
+        <input type="text" id="keywords" name="keywords" placeholder="e.g., Python, Sales">
+
+        <label for="experience">Experience Level:</label>
+        <select id="experience" name="experience">
+          <option value="">Any</option>
+          <option value="entry">Entry Level</option>
+          <option value="mid">Mid Level</option>
+          <option value="senior">Senior Level</option>
+        </select>
+
+        <label for="employment-type">Employment Type:</label>
+        <select id="employment-type" name="employment-type">
+          <option value="">Any</option>
+          <option value="full-time">Full-Time</option>
+          <option value="part-time">Part-Time</option>
+          <option value="contract">Contract</option>
+        </select>
+
+        <button type="submit">Search Jobs</button>
+      </form>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!-- Example Job Listings (you can dynamically generate these from a database) -->
+    <div class="job">
+      <h3>Software Developer</h3>
+      <p>Company: Tech Solutions Inc.</p>
+      <p>Location: New York, NY</p>
+      <p>Description: We are seeking a skilled software developer to join our dynamic team...</p>
+      <a href="#" class="apply-link">Apply Now</a>
+      <div class="apply-page">
+        <!-- Apply page content goes here -->
+        <h4>Apply for Software Developer Position</h4>
+        <form>
+          <!-- Add form fields for applying -->
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+          <label for="resume">Resume (PDF or Word):</label>
+          <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="job">
+      <h3>Marketing Specialist</h3>
+      <p>Company: Marketing Pros Ltd.</p>
+      <p>Location: London, UK</p>
+      <p>Description: Join our marketing team and contribute to innovative campaigns...</p>
+      <a href="#" class="apply-link">Apply Now</a>
+      <div class="apply-page">
+        <!-- Apply page content goes here -->
+        <h4>Apply for Marketing Specialist Position</h4>
+        <form>
+          <!-- Add form fields for applying -->
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+          <label for="resume">Resume (PDF or Word):</label>
+          <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </div>
+    </div>
+    <!-- Add more job listings as needed -->
+  </section>
+
+  <footer>
+    <a href="#" class="fab fa-linkedin"></a>
+    <a href="#" class="fab fa-facebook"></a>
+    <a href="#" class="fab fa-instagram"></a>
+    <a href="#" class="fab fa-youtube"></a>
+    <span>&nbsp;|&nbsp;</span>
+    <a href="mailto:fsaja8627@gmail.com">fsaja8627@gmail.com</a>
+    <span>&nbsp;|&nbsp;</span>
+    <span>Phone: +940769923123</span>
+    <span>&nbsp;|&nbsp;</span>
+    <span>&copy; 2024 Fathima Saja</span>
+  </footer>
+
+  <script>
+    // JavaScript code to handle the visibility of the apply page
+    const applyLinks = document.querySelectorAll('.apply-link');
+
+    applyLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const jobContainer = link.closest('.job');
+        const applyPage = jobContainer.querySelector('.apply-page');
+        applyPage.classList.toggle('show');
+      });
+    });
+  </script>
+
+</body>
+</html>

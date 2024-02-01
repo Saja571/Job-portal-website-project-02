@@ -1,0 +1,107 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal - Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .success-message {
+      display: none;
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Job Portal - Sign Up</h1>
+  </header>
+
+  <section>
+    <form id="signup-form" onsubmit="submitForm(); return false;">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+    
+    <div id="success-message" class="success-message">Login successful. Redirecting...</div>
+  </section>
+
+  <script>
+    function submitForm() {
+      var signupForm = document.getElementById('signup-form');
+      var successMessage = document.getElementById('success-message');
+
+      // Additional logic to handle form submission (send data to server, etc.)
+      // For demonstration purposes, let's show the success message and simulate a redirect after a short delay.
+      successMessage.style.display = 'block';
+      setTimeout(function() {
+        window.location.href = 'index.html'; // Redirect to index.html
+      }, 2000); // Adjust the delay (in milliseconds) as needed
+    }
+  </script>
+
+</body>
+</html>

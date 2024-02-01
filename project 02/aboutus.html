@@ -1,0 +1,138 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Job Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Include Font Awesome CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: blueviolet;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+      flex: 1;
+    }
+
+    .about-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out; /* Add fade-in animation */
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" id="logo">Job Portal</a>
+    <nav>
+      <a href="#">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="#">Job Search</a>
+      <a href="#">Contact</a>
+      <a href="#">Resume Search</a>
+      <a href="signup.html" id="signup-btn">Login</a>
+    </nav>
+  </header>
+
+  <section>
+    <div class="about-container">
+      <h2>About Us</h2>
+      <p>Welcome to Job Portal, your go-to destination for finding the perfect job opportunities. Our mission is to connect talented individuals with exciting career prospects across various industries.</p>
+      
+      <p>At Job Portal, we understand the importance of a fulfilling career, and we are dedicated to providing a platform that simplifies the job search process. Whether you are a recent graduate or an experienced professional, we strive to help you discover and apply for jobs that match your skills and aspirations.</p>
+
+      <p>Our user-friendly interface, comprehensive job listings, and advanced search features make the job-seeking journey efficient and effective. We believe in empowering individuals to take control of their careers and achieve their professional goals.</p>
+
+      <p>Explore our job listings, connect with top employers, and take the next step in your career with Job Portal. Thank you for choosing us as your trusted partner in the job search process.</p>
+    </div>
+  </section>
+
+  <footer>
+    <a href="#" class="fab fa-linkedin"></a>
+    <a href="#" class="fab fa-facebook"></a>
+    <a href="#" class="fab fa-instagram"></a>
+    <a href="#" class="fab fa-youtube"></a>
+    <span>&nbsp;|&nbsp;</span>
+    <a href="mailto:fsja8627@gmail.com">fsja8627@gmail.com</a>
+    <span>&nbsp;|&nbsp;</span>
+    <span>Phone: +940769923123</span>
+    <span>&nbsp;|&nbsp;</span>
+    <span>&copy; 2024 Fathima Saja</span>
+  </footer>
+
+</body>
+</html>

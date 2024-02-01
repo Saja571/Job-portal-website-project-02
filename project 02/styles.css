@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+  
+  #signup-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  section {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .job, .apply-form {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .apply-form {
+    display: none;
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .success-message {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
+  
+ 
+
+
+
+.job-content {
+    width: 70%; /* Adjust as needed */
+    float: left;
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+
+.social-icons a {
+    margin-right: 10px; /* Adjust spacing between icons */
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.apply-form {
+    margin-top: 20px;
+}
+
+/* Add more styling as needed for form fields, buttons, etc. */
+/* Your existing CSS */
+
+.posted-days {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Add more styling as needed for form fields, buttons, etc. */
+/* Your existing CSS */
+
+#job-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.job {
+  /* Your existing job styles */
+  /* Ensure appropriate width or use media queries for responsiveness */
+  width: calc(33.33% - 20px); /* Adjust as needed */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Your existing CSS */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.job {
+  width: 80%;
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-content {
+  margin-bottom: 20px;
+  
+}
+
+.job-content h2 {
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons a {
+  margin-left: 10px;
+  color: #333;
+}
+
+.apply-form {
+  display: none;
+  margin-top: 20px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+footer div {
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .job {
+      width: 100%;
+  }
+}
+
+

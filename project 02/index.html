@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Include Font Awesome CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url(''); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+  
+
+  <header>
+    <a href="#" id="logo" style="margin-left: 20px;">Job Portal</a>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="jobsearch.html">Job Search</a>
+      <a href="contact.html">Contact</a>
+      <a href="resume search.html">Resume Search</a>
+      <a href="signup.html" id="signup-btn">Login</a>
+    </nav>
+  </header>
+
+  <!-- ... (Your existing code) ... -->
+
+<section id="job-section">
+  <!-- Job 1 -->
+  <div class="job" id="job-1">
+      <!-- Job Content -->
+      <div class="job-content">
+          <h2>Job Title 1</h2>
+          <p>Company: Company Name 1</p>
+          <p>Location: City, Country</p>
+          <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci vel orci efficitur fringilla.</p>
+          <p class="posted-days" id="posted-days-1"></p>
+          <a href="#" onclick="showApplyForm(1)">Apply Now</a>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpRqoi7IE2DEQIECE312zZEQNOYNzvK2zfsekgHaAwqUcOkP7IfwbtFz6N8o1e2xiCU6Q&usqp=CAU" alt="" style="margin-left: 90%;">
+      </div>
+
+      <!-- Social Icons (Right Side) -->
+      <div class="social-icons">
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="https://wa.me/1234567890" target="_blank" class="fab fa-whatsapp"></a>
+      </div>
+
+      <!-- Apply Form -->
+      <div id="apply-form-1" class="apply-form">
+          <h3>Application Form for Job Title 1</h3>
+          <form id="form-1" onsubmit="submitForm(1); return false;">
+              <!-- Form Fields -->
+              <label for="name-1">Name:</label>
+              <input type="text" id="name-1" name="name" required>
+              <!-- ... (Other form fields) ... -->
+              <button type="submit">Submit Application</button>
+          </form>
+          <!-- Success Message -->
+          <div id="success-message-1" class="success-message">Application submitted successfully!</div>
+      </div>
+  </div>
+
+  <!-- Job 2 -->
+  <div class="job" id="job-2">
+      <!-- Job Content -->
+      <div class="job-content">
+          <h2>Job Title 2</h2>
+          <p>Company: Company Name 2</p>
+          <p>Location: City, Country</p>
+          <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci vel orci efficitur fringilla.</p>
+          <p class="posted-days" id="posted-days-2"></p>
+          <a href="#" onclick="showApplyForm(2)">Apply Now</a>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjbfX4iR3G-2bbOq9gvAOWB0NbiSjn6zk8u_q2vr5GPIULvTCAv9WaKUu-AuEoNoYzeJ4&usqp=CAU" alt="" style="margin-left: 90%;">
+      </div>
+
+      <!-- Social Icons (Right Side) -->
+      <div class="social-icons">
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="https://wa.me/1234567890" target="_blank" class="fab fa-whatsapp"></a>
+      </div>
+
+      <!-- Apply Form -->
+      <div id="apply-form-2" class="apply-form">
+          <h3>Application Form for Job Title 2</h3>
+          <form id="form-2" onsubmit="submitForm(2); return false;">
+              <!-- Form Fields -->
+              <label for="name-2">Name:</label>
+              <input type="text" id="name-2" name="name" required>
+              <!-- ... (Other form fields) ... -->
+              <button type="submit">Submit Application</button>
+          </form>
+          <!-- Success Message -->
+          <div id="success-message-2" class="success-message">Application submitted successfully!</div>
+      </div>
+  </div>
+
+  <!-- Job 3 -->
+  <!-- ... (Repeat the structure for Job 3, 4, 5, and 6) ... -->
+<!-- Job 2 -->
+<div class="job" id="job-2">
+  <!-- Job Content -->
+  <div class="job-content">
+      <h2>Job Title 2</h2>
+      <p>Company: Company Name 2</p>
+      <p>Location: City, Country</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci vel orci efficitur fringilla.</p>
+      <p class="posted-days" id="posted-days-2"></p>
+      <a href="#" onclick="showApplyForm(2)">Apply Now</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6VmrvRV9fQCmTF-CPKY8ejd-3VSCGMKOX6zdhYzI-QpvsZY6Nzd1g-CnccuV9mEXhps&usqp=CAU" alt="" style="margin-left: 90%;">
+  </div>
+
+  <!-- Social Icons (Right Side) -->
+  <div class="social-icons">
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="https://wa.me/1234567890" target="_blank" class="fab fa-whatsapp"></a>
+  </div>
+
+  <!-- Apply Form -->
+  <div id="apply-form-2" class="apply-form">
+      <h3>Application Form for Job Title 2</h3>
+      <form id="form-2" onsubmit="submitForm(2); return false;">
+          <!-- Form Fields -->
+          <label for="name-2">Name:</label>
+          <input type="text" id="name-2" name="name" required>
+          <!-- ... (Other form fields) ... -->
+          <button type="submit">Submit Application</button>
+      </form>
+      <!-- Success Message -->
+      <div id="success-message-2" class="success-message">Application submitted successfully!</div>
+  </div>
+</div>
+
+<!-- Job 2 -->
+<div class="job" id="job-2">
+  <!-- Job Content -->
+  <div class="job-content">
+      <h2>Job Title 2</h2>
+      <p>Company: Company Name 2</p>
+      <p>Location: City, Country</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci vel orci efficitur fringilla.</p>
+      <p class="posted-days" id="posted-days-2"></p>
+      <a href="#" onclick="showApplyForm(2)">Apply Now</a>
+      <img src="data:image/png;base64,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" alt="" style="margin-left: 90%;">
+  </div>
+
+  <!-- Social Icons (Right Side) -->
+  <div class="social-icons">
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="https://wa.me/1234567890" target="_blank" class="fab fa-whatsapp"></a>
+  </div>
+
+  <!-- Apply Form -->
+  <div id="apply-form-2" class="apply-form">
+      <h3>Application Form for Job Title 2</h3>
+      <form id="form-2" onsubmit="submitForm(2); return false;">
+          <!-- Form Fields -->
+          <label for="name-2">Name:</label>
+          <input type="text" id="name-2" name="name" required>
+          <!-- ... (Other form fields) ... -->
+          <button type="submit">Submit Application</button>
+      </form>
+      <!-- Success Message -->
+      <div id="success-message-2" class="success-message">Application submitted successfully!</div>
+  </div>
+</div>
+
+
+<!-- Job 2 -->
+<div class="job" id="job-2">
+  <!-- Job Content -->
+  <div class="job-content">
+      <h2>Job Title 2</h2>
+      <p>Company: Company Name 2</p>
+      <p>Location: City, Country</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci vel orci efficitur fringilla.</p>
+      <p class="posted-days" id="posted-days-2"></p>
+      <a href="#" onclick="showApplyForm(2)">Apply Now</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjND4-2_yeEMpCy-lCqZhKKHxQUJgV8CzqZg&usqp=CAU" alt="" style="margin-left: 90%;">
+  </div>
+
+  <!-- Social Icons (Right Side) -->
+  <div class="social-icons">
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="https://wa.me/1234567890" target="_blank" class="fab fa-whatsapp"></a>
+  </div>
+
+  <!-- Apply Form -->
+  <div id="apply-form-2" class="apply-form">
+      <h3>Application Form for Job Title 2</h3>
+      <form id="form-2" onsubmit="submitForm(2); return false;">
+          <!-- Form Fields -->
+          <label for="name-2">Name:</label>
+          <input type="text" id="name-2" name="name" required>
+          <!-- ... (Other form fields) ... -->
+          <button type="submit">Submit Application</button>
+      </form>
+      <!-- Success Message -->
+      <div id="success-message-2" class="success-message">Application submitted successfully!</div>
+  </div>
+</div>
+
+<!-- Job 2 -->
+<div class="job" id="job-2">
+  <!-- Job Content -->
+  <div class="job-content">
+      <h2>Job Title 2</h2>
+      <p>Company: Company Name 2</p>
+      <p>Location: City, Country</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci vel orci efficitur fringilla.</p>
+      <p class="posted-days" id="posted-days-2"></p>
+      <a href="#" onclick="showApplyForm(2)">Apply Now</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5EA_bJ-LMZXxO5RJc3wq_JXESwumMRnawyA&usqp=CAU" alt="" style="margin-left: 90%;">
+  </div>
+
+  <!-- Social Icons (Right Side) -->
+  <div class="social-icons">
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="https://wa.me/1234567890" target="_blank" class="fab fa-whatsapp"></a>
+  </div>
+
+  <!-- Apply Form -->
+  <div id="apply-form-2" class="apply-form">
+      <h3>Application Form for Job Title 2</h3>
+      <form id="form-2" onsubmit="submitForm(2); return false;">
+          <!-- Form Fields -->
+          <label for="name-2">Name:</label>
+          <input type="text" id="name-2" name="name" required>
+          <!-- ... (Other form fields) ... -->
+          <button type="submit">Submit Application</button>
+      </form>
+      <!-- Success Message -->
+      <div id="success-message-2" class="success-message">Application submitted successfully!</div>
+  </div>
+</div>
+
+<!-- Job 2 -->
+<div class="job" id="job-2">
+  <!-- Job Content -->
+  <div class="job-content">
+      <h2>Job Title 2</h2>
+      <p>Company: Company Name 2</p>
+      <p>Location: City, Country</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci vel orci efficitur fringilla.</p>
+      <p class="posted-days" id="posted-days-2"></p>
+      <a href="#" onclick="showApplyForm(2)">Apply Now</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjoQ6FuWm6-u0fMnXMakNMfcLxOhYp3mIAA&usqp=CAU" alt="" style="margin-left: 90%;">
+  </div>
+
+  <!-- Social Icons (Right Side) -->
+  <div class="social-icons">
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="https://wa.me/1234567890" target="_blank" class="fab fa-whatsapp"></a>
+  </div>
+
+  <!-- Apply Form -->
+  <div id="apply-form-2" class="apply-form">
+      <h3>Application Form for Job Title 2</h3>
+      <form id="form-2" onsubmit="submitForm(2); return false;">
+          <!-- Form Fields -->
+          <label for="name-2">Name:</label>
+          <input type="text" id="name-2" name="name" required>
+          <!-- ... (Other form fields) ... -->
+          <button type="submit">Submit Application</button>
+      </form>
+      <!-- Success Message -->
+      <div id="success-message-2" class="success-message">Application submitted successfully!</div>
+  </div>
+</div>
+
+<!-- Job 2 -->
+<div class="job" id="job-2">
+  <!-- Job Content -->
+  <div class="job-content">
+      <h2>Job Title 2</h2>
+      <p>Company: Company Name 2</p>
+      <p>Location: City, Country</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci vel orci efficitur fringilla.</p>
+      <p class="posted-days" id="posted-days-2"></p>
+      <a href="#" onclick="showApplyForm(2)">Apply Now</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39iEyIolgyS8CDhURVblj2_iy167glMzKmA&usqp=CAU" alt="" style="margin-left: 90%;">
+  </div>
+
+  <!-- Social Icons (Right Side) -->
+  <div class="social-icons">
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="https://wa.me/1234567890" target="_blank" class="fab fa-whatsapp"></a>
+  </div>
+
+  <!-- Apply Form -->
+  <div id="apply-form-2" class="apply-form">
+      <h3>Application Form for Job Title 2</h3>
+      <form id="form-2" onsubmit="submitForm(2); return false;">
+          <!-- Form Fields -->
+          <label for="name-2">Name:</label>
+          <input type="text" id="name-2" name="name" required>
+          <!-- ... (Other form fields) ... -->
+          <button type="submit">Submit Application</button>
+      </form>
+      <!-- Success Message -->
+      <div id="success-message-2" class="success-message">Application submitted successfully!</div>
+  </div>
+</div>
+<!-- Job 2 -->
+<div class="job" id="job-2">
+  <!-- Job Content -->
+  <div class="job-content">
+      <h2>Job Title 2</h2>
+      <p>Company: Company Name 2</p>
+      <p>Location: City, Country</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac orci vel orci efficitur fringilla.</p>
+      <p class="posted-days" id="posted-days-2"></p>
+      <a href="#" onclick="showApplyForm(2)">Apply Now</a>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmTjVN8whDFnqEkolxVvAJHsCwL0jbSKsquQ&usqp=CAU" alt="" style="margin-left: 90%;">
+  </div>
+
+  <!-- Social Icons (Right Side) -->
+  <div class="social-icons">
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="https://wa.me/1234567890" target="_blank" class="fab fa-whatsapp"></a>
+  </div>
+
+  <!-- Apply Form -->
+  <div id="apply-form-2" class="apply-form">
+      <h3>Application Form for Job Title 2</h3>
+      <form id="form-2" onsubmit="submitForm(2); return false;">
+          <!-- Form Fields -->
+          <label for="name-2">Name:</label>
+          <input type="text" id="name-2" name="name" required>
+          <!-- ... (Other form fields) ... -->
+          <button type="submit">Submit Application</button>
+      </form>
+      <!-- Success Message -->
+      <div id="success-message-2" class="success-message">Application submitted successfully!</div>
+  </div>
+</div>
+</section>
+
+<!-- ... (Your existing code) ... -->
+
+
+
+
+  <footer>
+    <div>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Place: Eastern Province, Batticaloa, Kattankudy</p>
+      <p>Mail: fsaja8627@gmail.com</p>
+      <p>Phone: +940769923123</p>
+    </div>
+    <div>
+      <p>&copy; 2024 Fathima Saja. All rights reserved.</p>
+    </div>
+    <div>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-facebook"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-youtube"></a>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+
+
+  
+</body>
+
+</html>

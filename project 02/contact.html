@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Job Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Include Font Awesome CSS -->
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Set the body to at least 100% of the viewport height */
+      margin: 0;
+      padding: 0;
+      background-color: red;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav {
+      display: flex;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    section {
+      flex: 1; /* Use remaining vertical space */
+      padding: 20px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff; /* Set your preferred background color here */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .success-message {
+      color: #4CAF50;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#" id="logo">Job Portal</a>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Job Search</a>
+      <a href="#">Contact</a>
+      <a href="#">Resume Search</a>
+      <a href="signup.html" id="signup-btn">Login</a>
+    </nav>
+  </header>
+
+  <section>
+    <form id="contactForm">
+      <h2>Contact Us</h2>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="button" onclick="submitForm()">Submit</button>
+
+      <p class="success-message" id="successMessage"></p>
+    </form>
+  </section>
+
+  <footer>
+    <a href="#" class="fab fa-linkedin"></a>
+    <a href="#" class="fab fa-facebook"></a>
+    <a href="#" class="fab fa-instagram"></a>
+    <a href="#" class="fab fa-youtube"></a>
+    <span>&nbsp;|&nbsp;</span>
+    <a href="mailto:fsaja8627@gmail.com">fsaja8627@gmail.com</a>
+    <span>&nbsp;|&nbsp;</span>
+    <span>Phone: +940769923123</span>
+    <span>&nbsp;|&nbsp;</span>
+    <span>&copy; 2024 Fathima Saja</span>
+  </footer>
+
+  <script>
+    function submitForm() {
+      // You can add form validation logic here before displaying success message
+      document.getElementById("successMessage").textContent = "Message sent successfully!";
+    }
+  </script>
+
+</body>
+</html>
